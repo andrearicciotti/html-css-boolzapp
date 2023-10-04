@@ -1,0 +1,26 @@
+:root {
+    --body-bg-top: #429488;
+    --body-bg-bottom: #d9dbd5;
+    --header-col: #eaeaea;
+    --chat-send-col: #dcf8c0;
+    --chat-received-col: #ffffff;
+    --notifications-col: #9fd8f8;
+    --text-icons-col: #b1b1b1;
+    --footer-col: #f2eeea;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 62.5%;
+    background-color: #429488;
+}
