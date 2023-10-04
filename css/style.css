@@ -38,8 +38,8 @@ body {
     margin: 0 auto;
     display: flex;
     /* debug */
-    background-color: darkgray;
-    border: 1px solid red;
+    /* background-color: darkgray;
+    border: 1px solid red; */
 }
 
 .chat-col {
@@ -53,11 +53,31 @@ body {
     /* background-color: bisque; */
 }
 
+.msg {
+    border-radius: 10px;
+    padding: .5rem;
+    margin: 1rem;
+    min-width: 50%;
+    max-width: 60%;
+}
+
+.chat-send {
+    background-color: var(--chat-send-col);
+    display: flex;
+    align-self: flex-end;
+}
+
+.chat-receive {
+    background-color: var(--chat-received-col);
+    display: flex;
+    align-self: flex-start;
+}
+
 .side-col {
     width: 33%;
     height: 100%;
     /* debug */
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 .header {
@@ -70,12 +90,11 @@ body {
 }
 
 .time {
-    height: 67%;
-    margin-right: .3rem;
+    height: 55%;
+    margin-right: .9rem;
     color: var(--text-icons-col);
     font-size: .4rem;
-    font-weight: 100;
-    
+    font-weight: 100;    
 }
 
 
@@ -96,7 +115,7 @@ body {
     width: 100%;
     height: 7%;
     /* debug */
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 
 .list-chats {
@@ -125,12 +144,16 @@ body {
 }
 
 .chat-container {
-    width: 80%;
-    padding-top: 2rem;
+    width: 100%;
+    padding: 2rem;
     max-height: 100%;
     margin: 0 auto;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 
 .icons {
     color: var(--text-icons-col);
@@ -152,8 +175,8 @@ body {
     width: 100%;
     height: 13%;
     font-size: .5rem;
+    border-bottom: 1px solid var(--text-icons-col);
     /* debug */
-    border: 1px solid black;
 }
 
 .list-item .name {
