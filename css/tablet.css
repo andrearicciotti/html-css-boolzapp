@@ -9,3 +9,22 @@
     --footer-col: #f2eeea;
 }
 
+.side-col {
+    width: unset;
+}
+
+.chat-col {
+    flex-grow: 1;
+}
+
+.side-col .header .icons {
+    display: none;
+}
+
+.list-chats .list .list-item .avatar-text, .time {
+    display: none;
+}
+
+.notifications, .find-chat {
+    display: none;
+}

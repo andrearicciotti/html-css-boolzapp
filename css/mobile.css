@@ -8,3 +8,7 @@
     --text-icons-col: #b1b1b1;
     --footer-col: #f2eeea;
 }
+
+.side-col {
+    display: none;
+}

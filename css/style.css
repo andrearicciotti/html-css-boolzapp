@@ -22,11 +22,12 @@ img {
 
 body {
     font-size: 62.5%;
+    font-family: 'Nunito Sans', sans-serif;
     width: 100%;
     height: 100vh;
     padding: 1rem 0;
     /* debug */
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 /* UTILITIES */
 
@@ -38,6 +39,7 @@ body {
     display: flex;
     /* debug */
     background-color: darkgray;
+    border: 1px solid red;
 }
 
 .chat-col {
@@ -64,6 +66,16 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.time {
+    height: 67%;
+    margin-right: .3rem;
+    color: var(--text-icons-col);
+    font-size: .4rem;
+    font-weight: 100;
+    
 }
 
 
@@ -91,7 +103,7 @@ body {
     width: 100%;
     height: 73%;
     /* debug */
-    background-color: #dcf8c0;
+    /* background-color: #dcf8c0; */
 }
 
 .list {
@@ -99,14 +111,8 @@ body {
     height: 100%;
 }
 
-.avatar {
-    width: 100%;
-    height: 13%;
-    /* debug */
-    border: 1px solid black;
-}
 
-/* WINDOW'S CHAT */
+/* CHAT'S WINDOW */
 .chat-col .chat {
     height: 82%;
 }
@@ -124,4 +130,58 @@ body {
     max-height: 100%;
     margin: 0 auto;
     overflow-y: auto;
+}
+
+.icons {
+    color: var(--text-icons-col);
+    letter-spacing: .3rem;
+    padding-right: .6rem;
+    font-weight: 600;
+}
+
+
+/* AVATAR PROPERTIES */
+.avatar-card {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item {
+    width: 100%;
+    height: 13%;
+    font-size: .5rem;
+    /* debug */
+    border: 1px solid black;
+}
+
+.list-item .name {
+    font-size: .6rem;
+}
+
+.avatar-img {
+    height: 100%;
+    padding: .2rem .4rem;
+}
+
+.avatar-img img {
+    height: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    /* padding: 1rem 2rem; */
+}
+
+.avatar-text {
+    line-height: .8rem;
+    flex-grow: 1;
+}
+
+.avatar-text span {
+    display: block;
+    padding: 0 .3rem;
+}
+
+.avatar-text .last-access {
+    color: var(--text-icons-col);
 }
