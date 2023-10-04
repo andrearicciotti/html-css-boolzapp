@@ -22,5 +22,58 @@ img {
 
 body {
     font-size: 62.5%;
-    background-color: #429488;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 0;
+    /* debug */
+    background-color: aquamarine;
+}
+/* UTILITIES */
+
+/* COMMON */
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* debug */
+    background-color: darkgray;
+}
+
+.chat-col {
+    flex-grow: 1;
+    height: 100%;
+    background-image: url(../img/mine.jpg);
+    background-size: 50%;
+    display: flex;
+    flex-direction: column;
+    /* debug */
+    /* background-color: bisque; */
+}
+
+.side-col {
+    width: 33%;
+    height: 100%;
+    /* debug */
+    background-color: azure;
+}
+
+.header {
+    height: 5rem;
+    background-color: var(--header-col);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* WINDOW'S CHAT */
+.chat-col .chat {
+    flex-grow: 1;
+}
+
+.chat-col .text-msg {
+    height: 5rem;
+    width: 100%;
+    background-color: var(--footer-col);
+    display: flex;
 }
