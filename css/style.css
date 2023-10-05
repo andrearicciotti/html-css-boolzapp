@@ -9,6 +9,7 @@
     --footer-col: #f2eeea;
 }
 
+
 /* RESET */
 * {
     margin: 0;
@@ -29,7 +30,10 @@ body {
     /* debug */
     /* background-color: aquamarine; */
 }
+
+
 /* UTILITIES */
+
 
 /* COMMON */
 .container {
@@ -76,8 +80,6 @@ body {
 .side-col {
     width: 33%;
     height: 100%;
-    /* debug */
-    /* background-color: azure; */
 }
 
 .header {
@@ -101,6 +103,11 @@ body {
 button {
     cursor: pointer;
 }
+
+details {
+    color: var(--text-icons-col);
+}
+
 
 /* SIDEBAR CHATS LIST*/
 .side-col {
@@ -181,8 +188,6 @@ button {
     width: 100%;
     height: calc(100% - 9rem);
     flex-grow: 1;
-    /* debug */
-    /* background-color: #dcf8c0; */
 }
 
 .list {
@@ -201,6 +206,7 @@ button {
     width: 100%;
     background-color: var(--footer-col);
     display: flex;
+    align-items: center;
 }
 
 .chat-container {
@@ -227,6 +233,22 @@ button {
     background-color: inherit;
 }
 
+.side-footer {
+    width: 10%;
+    text-align: center;
+}
+
+.message-input {
+    flex-grow: 1;
+}
+
+.message-input input {
+    border: none;
+    font-size: .6rem;
+    width: 100%;
+    padding: .8rem;
+    border-radius: 8px;
+}
 
 /* AVATAR PROPERTIES */
 .avatar-card {
@@ -245,6 +267,10 @@ button {
     text-align: left;
     border-bottom: 1px solid var(--text-icons-col);
     font-family: inherit;
+}
+
+.list li:hover {
+    filter: brightness(1.1);
 }
 
 .list-item .name {
