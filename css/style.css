@@ -27,8 +27,7 @@ body {
     width: 100%;
     height: 100vh;
     padding: 1rem 0;
-    /* debug */
-    /* background-color: aquamarine; */
+    background: linear-gradient(to bottom, #429488 15% 15%,#d9dbd5 15% 100%);
 }
 
 
@@ -41,9 +40,6 @@ body {
     height: 100%;
     margin: 0 auto;
     display: flex;
-    /* debug */
-    /* background-color: darkgray;
-    border: 1px solid red; */
 }
 
 .chat-col {
@@ -53,8 +49,6 @@ body {
     background-size: 50%;
     display: flex;
     flex-direction: column;
-    /* debug */
-    /* background-color: bisque; */
 }
 
 .msg {
@@ -63,6 +57,7 @@ body {
     margin: 1rem;
     min-width: 50%;
     max-width: 60%;
+    position: relative;
 }
 
 .chat-send {
@@ -102,10 +97,6 @@ body {
 
 button {
     cursor: pointer;
-}
-
-details {
-    color: var(--text-icons-col);
 }
 
 
@@ -188,6 +179,7 @@ details {
     width: 100%;
     height: calc(100% - 9rem);
     flex-grow: 1;
+    background-color: white;
 }
 
 .list {
@@ -199,6 +191,45 @@ details {
 /* CHAT'S WINDOW */
 .chat-col .chat {
     height: calc(100% - 6rem);
+}
+
+.fa-angle-down {
+    align-self: flex-start;
+    color: var(--text-icons-col);
+}
+
+.fa-angle-down:hover {
+    rotate: 180deg;
+}
+
+.fa-angle-down:hover + .hidden-options{
+    display: block;
+}
+
+.hidden-options:hover {
+    display: block;
+}
+
+.hidden-options {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: -webkit-center;
+    background-color: inherit;
+    filter: drop-shadow(2px 2px 3px grey);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.hidden-options button {
+    display: block;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: .6rem;
+    margin: 0.15rem 0;
+    font-weight: 600;
 }
 
 .chat-col .text-msg {
