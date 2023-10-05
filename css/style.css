@@ -81,12 +81,13 @@ body {
 }
 
 .header {
-    height: 9%;
+    height: 3rem;
     background-color: var(--header-col);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .time {
@@ -107,37 +108,93 @@ body {
 
 .notifications {
     width: 100%;
-    height: 11%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
     background-color: var(--notifications-col);
+}
+
+.notifications .bell-icon button {
+    height: 2.2rem;
+    width: 2.2rem;
+    line-height: 2rem;
+    margin: .6rem;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    color: var(--notifications-col);
+    font-size: 1rem;
+}
+
+.notifications-on span {
+    font-size: .7rem;    
+}
+
+.notifications-on button {
+    border: none;
+    background-color: inherit;
+    text-decoration: underline;
+    color: var(--text-icons-col);
+    font-size: .6rem;
 }
 
 .find-chat {
     width: 100%;
-    height: 7%;
-    /* debug */
-    /* border: 1px solid lightgray; */
+    height: 2.5rem;
+    background-color: var(--header-col);
+}
+
+.searchbar {
+    width: 95%;
+    height: 80%;
+    margin: .25rem auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding-left: .55rem;
+}
+
+.search-input input{
+    width: 100%;
+    border: none;
+    font-size: .6rem;
+}
+
+.lens-icon button {
+    color: var(--text-icons-col);
+    background-color: inherit;
+    font-size: .8rem;
+    margin: 0 .8rem;
+    border: none;
 }
 
 .list-chats {
     width: 100%;
-    height: 73%;
+    height: calc(100% - 9rem);
+    flex-grow: 1;
     /* debug */
     /* background-color: #dcf8c0; */
 }
 
 .list {
-    overflow-y: auto;
+    overflow-y: scroll;
     height: 100%;
 }
 
 
 /* CHAT'S WINDOW */
 .chat-col .chat {
-    height: 82%;
+    height: calc(100% - 6rem);
 }
 
 .chat-col .text-msg {
-    height: 9%;
+    height: 3rem;
     width: 100%;
     background-color: var(--footer-col);
     display: flex;
@@ -148,7 +205,7 @@ body {
     padding: 2rem;
     max-height: 100%;
     margin: 0 auto;
-    overflow-y: auto;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -159,7 +216,8 @@ body {
     color: var(--text-icons-col);
     letter-spacing: .3rem;
     padding-right: .6rem;
-    font-weight: 600;
+    font-weight: 1000;
+    font-size: 1rem;
 }
 
 
@@ -173,7 +231,7 @@ body {
 
 .list-item {
     width: 100%;
-    height: 13%;
+    height: 3rem;
     font-size: .5rem;
     border-bottom: 1px solid var(--text-icons-col);
     /* debug */

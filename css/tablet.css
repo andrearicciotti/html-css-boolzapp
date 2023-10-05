@@ -9,6 +9,15 @@
     --footer-col: #f2eeea;
 }
 
+body {
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
 .side-col {
     width: unset;
 }
@@ -24,6 +33,7 @@
 .list-chats .list .list-item .avatar-text, .time {
     display: none;
 }
+
 
 .notifications, .find-chat {
     display: none;
