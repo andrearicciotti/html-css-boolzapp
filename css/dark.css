@@ -1,0 +1,44 @@
+:root {
+    --bgtop-col-dark: #5f0f7c;
+    --bgbottom-col-dark: #282828;
+    --msg-receive-col-dark: #282828c7;
+    --msg-send-col-dark: #72298dd6;
+    --header-footer-input-col-dark: #3c3c3c;
+    --text-col-dark: #eaeaeaa1;
+    --notifications-col-dark: #587f9b;
+    --notifications-text-dark: #c6e2f6;
+}
+
+body {
+    background: linear-gradient(to bottom, #5f0f7c 15% 15%,#282828 15% 100%);
+    color: var(--text-col-dark);
+}
+
+button{
+    color: inherit;
+}
+
+.list {
+    background-color: var(--header-footer-input-col-dark);
+}
+
+.header, .find-chat, .chat-col .text-msg {
+    background-color: var(--header-footer-input-col-dark);
+}
+
+.chat-send {
+    background-color: var(--msg-send-col-dark);
+}
+
+.chat-receive {
+    background-color: var(--msg-receive-col-dark);
+}
+
+.notifications {
+    background-color: var(--notifications-col-dark);
+    color: var(--notifications-text-dark);
+}
+
+.notifications .fa-bell-slash {
+    color: var(--notifications-col-dark)
+}

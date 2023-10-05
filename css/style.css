@@ -225,7 +225,7 @@ button {
 .hidden-options button {
     display: block;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
     font-family: inherit;
     font-size: .6rem;
     margin: 0.15rem 0;
