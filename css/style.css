@@ -269,6 +269,49 @@ button {
     text-align: center;
 }
 
+.fa-microphone:active {
+    animation-name: recording;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes recording {
+    0% {
+        color: rgb(255, 171, 171);
+        border-radius: 50%;
+        background-color: var(--chat-send-col);
+        border: .5px solid rgb(255, 171, 171);
+    }
+
+    25% {
+        color: rgb(255, 96, 96);
+        background-color: var(--chat-send-col);
+        border: .5px solid rgb(255, 96, 96);
+    }
+
+    50% {
+        color: red;
+        background-color: var(--chat-send-col);
+        padding: .6rem;
+        border-radius: 50%;
+        border: .5px solid red;
+    }
+
+    75% {
+        color: rgb(255, 96, 96);
+        background-color: var(--chat-send-col);
+        border: .5px solid rgb(255, 96, 96);
+    }
+
+    100% {
+        color: rgb(255, 171, 171);
+        border-radius: 50%;
+        background-color: var(--chat-send-col);
+        border: .5px solid rgb(255, 171, 171);
+    }
+}
+
 .message-input {
     flex-grow: 1;
 }

@@ -42,3 +42,46 @@ button{
 .notifications .fa-bell-slash {
     color: var(--notifications-col-dark)
 }
+
+.fa-microphone:active {
+    animation-name: recording-dark;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes recording-dark {
+    0% {
+        color: rgb(255, 171, 171);
+        border-radius: 50%;
+        background-color: var(--msg-send-col-dark);
+        border: .5px solid rgb(255, 171, 171);
+    }
+
+    25% {
+        color: rgb(255, 96, 96);
+        background-color: var(--msg-send-col-dark);
+        border: .5px solid rgb(255, 96, 96);
+    }
+
+    50% {
+        color: red;
+        background-color: var(--msg-send-col-dark);
+        padding: .6rem;
+        border-radius: 50%;
+        border: .5px solid red;
+    }
+
+    75% {
+        color: rgb(255, 96, 96);
+        background-color: var(--msg-send-col-dark);
+        border: .5px solid rgb(255, 96, 96);
+    }
+
+    100% {
+        color: rgb(255, 171, 171);
+        border-radius: 50%;
+        background-color: var(--msg-send-col-dark);
+        border: .5px solid rgb(255, 171, 171);
+    }
+}
