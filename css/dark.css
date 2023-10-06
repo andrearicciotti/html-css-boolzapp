@@ -14,6 +14,14 @@ body {
     color: var(--text-col-dark);
 }
 
+.chat-col {
+    filter: invert();
+}
+
+.chat-col .msg, .chat-col .header, .chat-col footer {
+    filter: invert();
+}
+
 button{
     color: inherit;
 }
@@ -32,6 +40,15 @@ button{
 
 .chat-receive {
     background-color: var(--msg-receive-col-dark);
+}
+
+.searchbar, .message-input, input {
+    background-color: var(--header-footer-input-col-dark);
+    color: var(--text-col-dark);
+}
+
+.searchbar, .message-input input {
+    border: 1px solid var(--text-col-dark);
 }
 
 .notifications {
